@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact</title>
+
+   <link rel="stylesheet" href="../assets/css/styles.css">
+   <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" /> -->
+
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+   <script type="text/javascript">
+      (function () {
+         // https://dashboard.emailjs.com/admin/account
+         emailjs.init({
+            publicKey: "U-e2KYAD25_8RNzf7",
+         });
+      })();
+   </script>
+
+</head>
+
+<body>
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav_logo">CampGram</a>
+         <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+               <li class="nav_item"><a href="/index.html" class="nav_link">Home</a></li>
+               <li class="nav_item"><a href="/index.html#about" class="nav_link">About</a></li>
+               <li class="nav_item"><a href="/index.html#popular" class="nav_link">Popular</a></li>
+               <li class="nav_item"><a href="campsites.html" class="nav_link">Camps</a></li>
+               <li class="nav_item"><a href="contact.html" class="nav_link  active-link">Contact</a></li>
+
+            </ul>
+            <!-- close button -->
+            <div class="nav_close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+         <!-- toogle button -->
+         <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <main>
+      <section class="contact section">
+         <div class="contact_container container">
+            <div class="contact_data">
+               <div>
+                  <h2 class="section_title">Contact Us</h2>
+                  <p class="join_description">Have a question or want to book a camp?<br> Send us a message and we'll
+                     get back to you shortly.</p>
+               </div>
+
+               <form id="contact-form" class="contact_form" onsubmit="sendEmail(event)" novalidate>
+                  <div class="input-group">
+                     <label for="name">Name</label>
+                     <input type="text" id="name" class="join_input">
+                     <span class="error" id="nameError"></span>
+                  </div>
+
+                  <div class="input-group">
+                     <label for="email">Email</label>
+                     <input type="email" id="email" class="join_input" required>
+                     <span class="error" id="emailError"></span>
+                  </div>
+
+                  <div class="input-group">
+                     <label for="number">Phone</label>
+                     <input type="tel" id="number" class="join_input" placeholder="e.g. +919876543210">
+                     <span class="error" id="numberError"></span>
+                  </div>
+
+                  <div class="input-group">
+                     <label for="message">Message</label>
+                     <textarea name="message" id="message" rows="3"
+                        placeholder="Enter your message here.." required></textarea>
+                     <span class="error" id="messageError"></span>
+                  </div>
+
+                  <button class="contact_submit-btn" type="submit">Send Message</button>
+               </form>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="footer_container container grid">
+         <div class="footer_content grid">
+            <div>
+               <a href="" class="footer_logo">CampGram</a>
+
+               <p class="footer_description">
+                  Travel with us and explore <br>
+                  the world without limits.
+               </p>
+            </div>
+
+            <div class="footer_data grid">
+               <div>
+                  <h3 class="footer_title">About</h3>
+
+                  <ul class="footer_links">
+                     <li>
+                        <a href="" class="footer_link">About Us</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer_link">Features</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer_link">News & Blog</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer_title">Company</h3>
+
+                  <ul class="footer_links">
+                     <li>
+                        <a href="" class="footer_link">FAQs</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer_link">History</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer_link">Testimonials</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer_title">Contact</h3>
+
+                  <ul class="footer_links">
+                     <li>
+                        <a href="" class="footer_link">Call Center</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer_link">Support Center</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer_link">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div>
+                  <h3 class="footer_title">Support</h3>
+
+                  <ul class="footer_links">
+                     <li>
+                        <a href="" class="footer_link">Privacy Policy</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer_link">Terms & Services</a>
+                     </li>
+
+                     <li>
+                        <a href="" class="footer_link">Payments</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer_group">
+            <div class="footer_social">
+               <a href="" target="_blank" class="footer_social_link">
+                  <i class="ri-instagram-line"></i>
+               </a>
+
+               <a href="" target="_blank" class="footer_social_link">
+                  <i class="ri-youtube-line"></i>
+               </a>
+
+               <a href="" target="_blank" class="footer_social_link">
+                  <!-- <i class="ri-facebook-line"></i> -->
+                  <i class="ri-facebook-circle-line"></i>
+               </a>
+
+               <a href="" target="_blank" class="footer_social_link">
+                  <i class="ri-threads-line"></i>
+               </a>
+            </div>
+
+            <span class="footer_copy">
+               &#169; Copyright Bedimcode. All rights reserved
+            </span>
+         </div>
+      </div>
+   </footer>
+
+   <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
