@@ -27,7 +27,7 @@ const camps = [
     type: "Meadow / Hill Station",
     description: "Rolling meadows, pine forests, and misty mornings — perfect for calm nature stays.",
     bestSeason: "September – February",
-    img: "../assets/images/camps/vagamon-camp.jpg",
+    img: "../assets/images/camps/Vagamon-camp.jpg",
     priceStarting: 2000
   },
   {
@@ -97,7 +97,7 @@ const camps = [
     type: "Mountain / Trekking",
     description: "Trek Kerala’s highest peak with a guided camping experience under starry skies.",
     bestSeason: "December – February",
-    img: "../assets/images/camps/agasthyakoodam-camp.jpg",
+    img: "../assets/images/camps/Agasthyakoodam-camp.jpg",
     priceStarting: 2700
   }
 ];
