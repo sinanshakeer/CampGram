@@ -1,187 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camps</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Camps</title>
-   <link rel="stylesheet" href="/assets/css/styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
 
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
-
-</head>
-
-<body>
-
-   <body class="camps_body">
+  <body>
+    <body class="camps_body">
       <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav_logo">CampGram</a>
-            <div class="nav_menu" id="nav-menu">
-               <ul class="nav_list">
-                  <li class="nav_item"><a href="/index.html" class="nav_link">Home</a></li>
-                  <li class="nav_item"><a href="/index.html#about" class="nav_link">About</a></li>
-                  <li class="nav_item"><a href="/index.html#popular" class="nav_link">Popular</a></li>
-                  <li class="nav_item"><a href="#" class="nav_link active-link">Camps</a></li>
-                  <li class="nav_item"><a href="contact.html" class="nav_link">Contact</a></li>
-
-               </ul>
-               <!-- close button -->
-               <div class="nav_close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
+        <nav class="nav container">
+          <a href="#" class="nav_logo">CampGram</a>
+          <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="/index.html" class="nav_link">Home</a>
+              </li>
+              <li class="nav_item">
+                <a href="/index.html#about" class="nav_link">About</a>
+              </li>
+              <li class="nav_item">
+                <a href="/index.html#popular" class="nav_link">Popular</a>
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link active-link">Camps</a>
+              </li>
+              <li class="nav_item">
+                <a href="contact.html" class="nav_link">Contact</a>
+              </li>
+            </ul>
+            <!-- close button -->
+            <div class="nav_close" id="nav-close">
+              <i class="ri-close-line"></i>
             </div>
-            <!-- toogle button -->
-            <div class="nav_toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
-            </div>
-         </nav>
+          </div>
+          <!-- toogle button -->
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </nav>
       </header>
 
       <main>
-         <!-- <img class="home_bg" src="./assets/img/home-bg.jpg" alt=""> -->
-         <img class="home_bg" src="../assets/images/home-bg1.avif" alt="">
-         <div class="home_shadow"></div>
+        <!-- <img class="home_bg" src="./assets/img/home-bg.jpg" alt=""> -->
+        <img class="home_bg" src="../assets/images/home-bg1.avif" alt="" />
+        <div class="home_shadow"></div>
 
-         <div class="campsite_container  container">
-            <section class="filter-section">
-               <select id="locationFilter">
-                  <option value="all">All Locations</option>
-               </select>
+        <div class="campsite_container container">
+          <section class="filter-section">
+            <select id="locationFilter">
+              <option value="all">All Locations</option>
+            </select>
 
-               <select id="typeFilter">
-                  <option value="all">All Types</option>
-               </select>
-            </section>
+            <select id="typeFilter">
+              <option value="all">All Types</option>
+            </select>
+          </section>
 
-            <section id="camps" class="camp-list"></section>
-         </div>
-
+          <section id="camps" class="camp-list"></section>
+        </div>
       </main>
       <footer class="footer">
-         <div class="footer_container container grid">
-            <div class="footer_content grid">
-               <div>
-                  <a href="" class="footer_logo">CampGram</a>
+        <div class="footer_container container grid">
+          <div class="footer_content grid">
+            <div>
+              <a href="" class="footer_logo">CampGram</a>
 
-                  <p class="footer_description">
-                     Travel with us and explore <br>
-                     the world without limits.
-                  </p>
-               </div>
-
-               <div class="footer_data grid">
-                  <div>
-                     <h3 class="footer_title">About</h3>
-
-                     <ul class="footer_links">
-                        <li>
-                           <a href="" class="footer_link">About Us</a>
-                        </li>
-
-                        <li>
-                           <a href="" class="footer_link">Features</a>
-                        </li>
-
-                        <li>
-                           <a href="" class="footer_link">News & Blog</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer_title">Company</h3>
-
-                     <ul class="footer_links">
-                        <li>
-                           <a href="" class="footer_link">FAQs</a>
-                        </li>
-
-                        <li>
-                           <a href="" class="footer_link">History</a>
-                        </li>
-
-                        <li>
-                           <a href="" class="footer_link">Testimonials</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer_title">Contact</h3>
-
-                     <ul class="footer_links">
-                        <li>
-                           <a href="" class="footer_link">Call Center</a>
-                        </li>
-
-                        <li>
-                           <a href="" class="footer_link">Support Center</a>
-                        </li>
-
-                        <li>
-                           <a href="" class="footer_link">Contact Us</a>
-                        </li>
-                     </ul>
-                  </div>
-
-                  <div>
-                     <h3 class="footer_title">Support</h3>
-
-                     <ul class="footer_links">
-                        <li>
-                           <a href="" class="footer_link">Privacy Policy</a>
-                        </li>
-
-                        <li>
-                           <a href="" class="footer_link">Terms & Services</a>
-                        </li>
-
-                        <li>
-                           <a href="" class="footer_link">Payments</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+              <p class="footer_description">
+                Travel with us and explore <br />
+                the world without limits.
+              </p>
             </div>
 
-            <div class="footer_group">
-               <div class="footer_social">
-                  <a href="" target="_blank" class="footer_social_link">
-                     <i class="ri-instagram-line"></i>
-                  </a>
+            <div class="footer_data grid">
+              <div>
+                <h3 class="footer_title">About</h3>
 
-                  <a href="" target="_blank" class="footer_social_link">
-                     <i class="ri-youtube-line"></i>
-                  </a>
+                <ul class="footer_links">
+                  <li>
+                    <a href="" class="footer_link">About Us</a>
+                  </li>
 
-                  <a href="" target="_blank" class="footer_social_link">
-                     <!-- <i class="ri-facebook-line"></i> -->
-                     <i class="ri-facebook-circle-line"></i>
-                  </a>
+                  <li>
+                    <a href="" class="footer_link">Features</a>
+                  </li>
 
-                  <a href="" target="_blank" class="footer_social_link">
-                     <i class="ri-threads-line"></i>
-                  </a>
-               </div>
+                  <li>
+                    <a href="" class="footer_link">News & Blog</a>
+                  </li>
+                </ul>
+              </div>
 
-               <span class="footer_copy">
-                  &#169; Copyright Bedimcode. All rights reserved
-               </span>
+              <div>
+                <h3 class="footer_title">Company</h3>
+
+                <ul class="footer_links">
+                  <li>
+                    <a href="" class="footer_link">FAQs</a>
+                  </li>
+
+                  <li>
+                    <a href="" class="footer_link">History</a>
+                  </li>
+
+                  <li>
+                    <a href="" class="footer_link">Testimonials</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="footer_title">Contact</h3>
+
+                <ul class="footer_links">
+                  <li>
+                    <a href="" class="footer_link">Call Center</a>
+                  </li>
+
+                  <li>
+                    <a href="" class="footer_link">Support Center</a>
+                  </li>
+
+                  <li>
+                    <a href="" class="footer_link">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="footer_title">Support</h3>
+
+                <ul class="footer_links">
+                  <li>
+                    <a href="" class="footer_link">Privacy Policy</a>
+                  </li>
+
+                  <li>
+                    <a href="" class="footer_link">Terms & Services</a>
+                  </li>
+
+                  <li>
+                    <a href="" class="footer_link">Payments</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-         </div>
+          </div>
+
+          <div class="footer_group">
+            <div class="footer_social">
+              <a href="" target="_blank" class="footer_social_link">
+                <i class="ri-instagram-line"></i>
+              </a>
+
+              <a href="" target="_blank" class="footer_social_link">
+                <i class="ri-youtube-line"></i>
+              </a>
+
+              <a href="" target="_blank" class="footer_social_link">
+                <!-- <i class="ri-facebook-line"></i> -->
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+
+              <a href="" target="_blank" class="footer_social_link">
+                <i class="ri-threads-line"></i>
+              </a>
+            </div>
+
+            <span class="footer_copy">
+              &#169; Copyright Bedimcode. All rights reserved
+            </span>
+          </div>
+        </div>
       </footer>
 
       <!--==================== scroll up ====================-->
       <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
+        <i class="ri-arrow-up-line"></i>
       </a>
 
-      <script src="/assets/js/campData.js"></script>
-      <script src="/assets/js/campsite.js"></script>
-      <script src="/assets/js/main.js"></script>
-   </body>
-
-</body>
-
+      <script src="../assets/js/campData.js"></script>
+      <script src="../assets/js/campsite.js"></script>
+      <script src="../assets/js/main.js"></script>
+    </body>
+  </body>
 </html>
